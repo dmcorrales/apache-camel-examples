@@ -12,7 +12,7 @@ public class Chapter1FtpConsumer extends RouteBuilder {
      */
     @Override
     public void configure() throws Exception {
-        from("ftp://213.190.6.37/api/app?username=u309605935&password=IdeashoppersFTP2018")
+        from("ftp://213.190.6.37/api/app?username=usr&password=mypaswd")
                 .process(new Processor() {
                     @Override
                     public void process(Exchange exchange) throws Exception {
